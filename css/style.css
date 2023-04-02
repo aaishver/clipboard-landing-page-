@@ -1,0 +1,377 @@
+*{
+    font-family: 'Bai Jamjuree', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: auto;
+    text-align: center;
+}
+h1, h2, h3{
+    color: hsl(210, 10%, 33%);
+}
+h1{
+    font-size: 45px;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 25px;
+}
+p{
+    padding: 1.2rem 0;
+    color: hsl(201, 11%, 66%);
+    font-size: 19px;
+}
+
+
+/* ------------- top box css section  ------------- */
+
+.top-box1{
+    margin: 8rem auto 10rem auto;
+}
+.c-logo{
+    margin-bottom: 4rem;
+}
+.content-global{
+    padding: 0 2rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* ------------- top second box css section ------------- */
+
+.top-box2{}
+
+.pc-img{
+    position: relative;
+    left: -2rem;
+}
+.box2-flex{
+    margin: 4rem 0;
+    width: 1250px;
+    display: flex;
+}
+.textbox1{
+    margin: 5rem 0 3rem 4.5rem;
+    text-align: left;
+}
+
+/* ------------- mid first box css section  ------------- */
+
+.mid-box1{
+    margin: 6rem auto 5rem auto;
+}
+.device-img{
+    margin-top: 5rem;
+}
+
+
+/* ------------- mid second box css section ------------- */
+
+.mid-box2{}
+
+.mid-box2-flex{
+    margin: 4rem 7rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.workflow{
+    margin: 0 8px;
+    width:400px;
+}
+.workflow img{
+    height: 35px;
+    margin-bottom: 3rem;
+}
+
+
+/* ------------- bottom first box css section ------------- */
+
+.bottom-box1{
+    margin: 9rem auto 6rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bottom-box1 img{
+    height: 45px;
+    width: 150px;
+}
+
+
+/* ------------- bottom second box css section  ------------- */
+
+.bottom-box2{
+    margin: 9rem auto;
+}
+
+
+
+/* ------------- footer  css section ------------- */
+footer{
+    background-color:#F5F6F8;
+    display: flex;
+    justify-content: space-around;
+}
+.bot-logo{
+    padding-top: 3.5rem;
+    width: 65px;
+}
+.foot-anc{
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px,100px));
+    grid-gap: 0px 70px;
+}
+.foot-anc a{
+    font-size: 20px;
+    text-decoration: none;
+    color: hsl(201, 11%, 66%);
+}
+footer a:hover{
+    color:  hsl(171, 66%, 44%);
+}
+.footer-social{
+    padding: 4rem 0;
+}
+.footer-social a{
+    margin: 1rem;
+}
+i{
+    color: grey;
+}
+i:hover{
+    color: hsl(171, 66%, 44%);
+}
+
+
+/* ------------------- button css section--------------------- */
+.btn-global{
+    margin: 2rem auto 5rem ;
+}
+.btn1{
+    margin-right: 1rem;
+    cursor: pointer;
+    border-radius: 28px;
+    box-shadow: 2px 5px 10px #A9EEE0;
+    color: #fff;
+    font-size: 18px;
+    background: hsl(171, 66%, 44%);
+    padding: 15px 40px 15px 40px;
+    text-decoration: none;
+    border-style: none;
+  }
+  
+  .btn1:hover {
+    background:hsl(171, 59%, 60%);
+    text-decoration: none;
+    border-style: none;
+  }
+
+.btn2{
+    margin-left: 1rem;
+    cursor: pointer;
+    border-radius: 28px;
+    box-shadow: 2px 5px 10px #CED6F5;
+    color: #fff;
+    font-size: 18px;
+    background: hsl(233, 100%, 69%);
+    padding: 15px 40px 15px 40px;
+    text-decoration: none;
+    border-style: none;
+}
+  
+.btn2:hover {
+    background:hsl(215, 61%, 70%) ; 
+    text-decoration: none;
+    border-style: none;
+}
+
+
+/* ---------- media queries section ---------- */
+
+@media (max-width: 1250px) {
+    .pc-img{
+        width: 600px;
+    }
+    .box2-flex{
+        width: 1100px;
+    }
+    .device-img{
+        width: 700px;
+    }
+    .textbox1{
+        margin: 4rem 0 3rem 4.5rem;
+    }
+    .bottom-box1 img{
+        height: 35px;
+        width: 130px;
+    }
+}
+
+@media (max-width: 1115px){
+    .box2-flex{
+        width: 1000px;
+    }
+    .textbox1{
+        margin: 3rem 0 3rem 4rem;
+    }
+}
+@media (max-width: 1000px){
+    .pc-img{
+        width: 500px;
+    }
+    .device-img{
+        width: 600px;
+    }
+    p{
+        font-size: 18px;
+    }
+    h1{
+        font-size:40px ;
+    }
+    h2{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    .textbox1 p{
+        padding-bottom: 0;
+    }
+    .box2-flex{
+        width: 850px;
+    }
+}
+
+
+/* ---------- tab/mobile media queries section ---------- */
+
+@media (max-width: 850px){
+    .box2-flex{
+        flex-direction: column;
+    }
+    .mid-box2-flex{
+        flex-direction: column;
+    }
+    .bottom-box1{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .foot-anc{
+        display: flex;
+        flex-direction: column;
+    }
+    .pc-img{
+        position:static;
+    }
+    .box2-flex{
+        width: unset;
+    }
+    .textbox1{
+        text-align: center;
+        width: 500px;
+        margin: 4rem auto;
+    }
+    .workflow{
+        margin-bottom: 2rem;
+        place-self: center;
+    }
+    .bottom-box1{
+        margin-top: 6rem;
+        place-items: center;
+    }
+    .bottom-box1 img{
+        margin-bottom: 5rem;
+        width: unset;
+        height: unset;
+    }
+    .foot-anc{
+        max-width: unset;
+    }
+    .foot-anc a{
+        margin-bottom: 2rem;
+    }
+    .footer-social{
+        margin: 0 auto ;
+        padding-top: 2rem;
+    }
+    .bot-logo{
+        padding-top: 2rem;
+    }
+}
+
+
+@media (max-width: 730px){
+    .textbox1{
+        width: unset;
+        padding: 0 2rem;
+    }
+    .pc-img{
+        width: 400px;
+    }
+    .device-img{
+        width: 450px;
+    }
+}
+
+@media (max-width:510px){
+    .btn1{
+        margin: 0 2rem 1rem 2rem;
+    }
+    .btn2{
+        margin: 1rem 2rem 0 2rem;
+    }
+    .btn-global{
+        display: flex;
+        flex-direction: column;
+    }
+    h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 27px;
+    }
+    .pc-img{
+        width: 300px;
+    }
+    .device-img{
+        width: 300px;
+    }
+    .workflow{
+        width: 300px;
+    }
+    .bottom-box2{
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width:350px){
+    .workflow{
+        width: 230px;
+    }
+    .foot-anc a{
+        font-size: 18px;
+    }
+    .btn1{
+        padding: 15px 20px;
+    }
+    .btn2{
+        padding: 15px 20px;
+    }
+}
+
+
+@media (max-width:320px) {
+    .pc-img{
+        width: 250px;
+    }
+    .device-img{
+        width: 250px;
+    }
+}
